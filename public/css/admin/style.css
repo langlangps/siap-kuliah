@@ -1,0 +1,221 @@
+.btn-org {
+    color: rgb(216, 88, 3);
+    border: 0.5px solid rgb(216, 88, 3);
+    height: 100%;
+    width: 100%;
+}
+
+.btn-org:hover {
+    background-color: rgb(216, 88, 3);
+    color: rgb(41, 12, 65);
+}
+
+#toManager .card:hover {
+    box-shadow: 0 0 0.4rem 0.2rem rgba(216, 88, 3, 0.767);
+}
+
+.jumbotron {
+    margin-top: 68px;
+    border-bottom: 2px solid rgba(216, 88, 3, 0.897);
+}
+
+.jumbotron h1 {
+    color: rgb(41, 12, 65);
+    cursor: default;
+    transition: all 0.4s;
+}
+
+.jumbotron h1:hover {
+    text-shadow: 0 0 0.1rem rgb(15, 4, 24);
+}
+
+.jumbotron .thumbnail:hover {
+    transition: all 0.5s;
+    transform: scale(1.2, 1.2);
+}
+
+.nav .nav-link:hover {
+    color: rgb(233, 205, 255);
+    transform: translate(50px, 0) scale(1.1, 1.1);
+}
+
+.member-card {
+    min-height: 100px;
+}
+
+#org-member {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.form-org {
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.form-org:hover {
+    background-color: white;
+}
+
+#delete-org {
+    display: block;
+    width: 100%;
+}
+
+#welcome-to-manager {
+    cursor: default;
+    transition: text-shadow 0.3s;
+}
+
+#welcome-to-manager:hover {
+    text-shadow: 0 0 0.1rem rgb(23, 4, 39);
+}
+
+.bg-gradient-royal-to-manager {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.89), rgb(23, 4, 39));
+}
+
+.card-to-manager {
+    max-width: 22%;
+    cursor: default;
+    transition: all 0.2s;
+}
+
+.card-to-manager:hover {
+    border: 2px solid rgb(216, 88, 3);
+}
+
+.card-to-manager .card-header {
+    cursor: pointer;
+}
+
+
+.form-to {
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    color: rgb(216, 88, 3);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.form-to:hover {
+    color: rgb(23, 4, 39);
+    background-color: white;
+    border: 1px solid rgb(216, 88, 3);
+}
+
+.form-to .form-control {
+    border: 1px solid rgb(216, 88, 3);
+}
+
+#all-try-out {
+    width: 80%;
+    padding: 0.2rem 0.3rem;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+#form-to-change {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scaleY(0);
+}
+
+#form-to-change.fadeIn {
+    transform: scaleY(1);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#q_container {
+    width: 100%;
+    gap: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 600px;
+    grid-template-areas:
+        "q_input q_output"
+        "q_input q_show";
+}
+
+#q_input {
+    border: 1px solid red;
+    grid-area: q_input;
+}
+
+#q_output {
+    border: 1px solid red;
+    grid-area: q_output;
+}
+
+#q_show {
+    overflow-y: auto;
+    border: 1px solid red;
+    grid-area: q_show;
+}
+
+.q_item {
+    display: grid;
+    margin: 2px;
+    grid-template-columns: 25px auto 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "q_item_number q_item_body q_item_choice_a"
+        "q_item_number q_item_body q_item_choice_b"
+        "q_item_number q_item_body q_item_choice_c"
+        "q_item_number q_item_body q_item_choice_d"
+        "q_item_number q_item_body q_item_choice_e"
+        "q_item_answer q_item_answer q_item_answer";
+    gap: 5px 5px;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(249, 233, 255);
+}
+
+.q_item:hover {
+    background-color: white;
+    box-shadow: 0 0 0.3rem black;
+}
+
+.q_item_number {
+    display: flex;
+    align-items: center;
+    grid-area: q_item_number;
+}
+
+.q_item_body {
+    padding: 0.2rem 0.3rem;
+    box-sizing: border-box;
+    grid-area: q_item_body;
+}
+
+.q_item_choice_a {
+    grid-area: q_item_choice_a;
+    cursor: default;
+}
+
+.q_item_choice_b {
+    grid-area: q_item_choice_b;
+    cursor: default;
+}
+
+.q_item_choice_c {
+    grid-area: q_item_choice_c;
+    cursor: default;
+}
+
+.q_item_choice_d {
+    grid-area: q_item_choice_d;
+    cursor: default;
+}
+
+.q_item_choice_e {
+    grid-area: q_item_choice_e;
+    cursor: default;
+}
+
+.q_item_answer {
+    grid-area: q_item_answer;
+}
